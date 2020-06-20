@@ -1,6 +1,7 @@
 function consultaCep(){
     $(".barra-progresso").show();
     var cep = document.getElementById("cep").value;
+
      //Verificando se a variavel cep tem somente numeros    
      if(!isNaN(cep)){
         
@@ -65,17 +66,9 @@ function consultaCep(){
                         $("#titulo_cep").html("CEP: "+response.cep);
     
                         $(".cep").show();
+                        
                         $(".barra-progresso").hide();
                     }
-                    /*
-                    document.getElementById("logradouro").innerHTML = response.logradouro;
-    
-                    document.getElementById("bairro").innerHTML = response.bairro;
-    
-                    document.getElementById("localidade").innerHTML = response.localidade;
-    
-                    document.getElementById("uf").innerHTML = response.uf;
-                    */
                 }
             });
         }
@@ -99,8 +92,8 @@ function consultaCep(){
     
 
 
-}
+};
 $(function(){
     $(".cep").hide();
     $(".barra-progresso").hide();
-})
+});
