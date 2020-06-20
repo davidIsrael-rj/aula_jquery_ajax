@@ -66,7 +66,7 @@ function consultaCep(){
                         $("#titulo_cep").html("CEP: "+response.cep);
     
                         $(".cep").show();
-                        
+
                         $(".barra-progresso").hide();
                     }
                 }
@@ -92,7 +92,7 @@ function consultaCep(){
     
 
 
-};
+}
 $(function(){
     $(".cep").hide();
     $(".barra-progresso").hide();
